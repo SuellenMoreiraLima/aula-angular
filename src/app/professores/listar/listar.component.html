@@ -1,0 +1,16 @@
+<p>listar works!</p>
+<p>Empresa Filho: {{empresaFilho}}</p>
+
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Nome</th>
+        <th>Email</th>
+    </tr>
+    <tr *ngFor="let p de professores">
+        <td>{{p.id}}</td>
+        <td>{{p.nome}}</td>
+        <td>{{p.email}}</td>
+
+    </tr>
+</table>
