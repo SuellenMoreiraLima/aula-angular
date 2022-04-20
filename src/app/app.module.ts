@@ -14,7 +14,8 @@ import { ProfessoresModule } from './professores/professores.module';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ProfessoresModule
+    ProfessoresModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
