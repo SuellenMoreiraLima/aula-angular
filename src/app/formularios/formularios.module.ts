@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { FormulariosRoutingModule } from './formularios-routing.module';
 import { ReativoFormComponent } from './reativo-form/reativo-form.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { ReativoFormComponent } from './reativo-form/reativo-form.component';
   ],
   imports: [
     CommonModule,
-    FormulariosRoutingModule
+    FormulariosRoutingModule,
+    ReactiveFormsModule
   ]
 })
 export class FormulariosModule { }
