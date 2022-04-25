@@ -1,3 +1,4 @@
+import { ProfessoresRoutingModule } from './professores-routing.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ListarComponent } from './listar/listar.component';
@@ -9,7 +10,8 @@ import { ListarComponent } from './listar/listar.component';
     ListarComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    ProfessoresRoutingModule
   ],
   exports: [
     ListarComponent

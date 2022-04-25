@@ -1,3 +1,4 @@
+import { FormulariosModule } from './formularios/formularios.module';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
@@ -15,6 +16,7 @@ import { ProfessoresModule } from './professores/professores.module';
     AppRoutingModule,
     FormsModule,
     ProfessoresModule,
+    FormulariosModule
     
   ],
   providers: [],
