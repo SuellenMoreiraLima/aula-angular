@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { Route } from '@angular/router';
-import { ProfessoresService } from '../professores.service';
 import { Router } from '@angular/router';
+import { ProfessoresService } from '../professores.service';
 
 @Component({
   selector: 'app-professor-form',
@@ -18,7 +17,7 @@ export class ProfessorFormComponent implements OnInit {
   constructor(
     private formBuilder: FormBuilder,
     private professoresService: ProfessoresService,
-    private router: Router
+    private router:Router
     ) { }
 
   // 3-) alocar os controles na variável meuForm através do formBuilder
@@ -38,9 +37,11 @@ export class ProfessorFormComponent implements OnInit {
       .subscribe(
         (data) => {
           console.log(data);
-          this.router.navigate('/professores')
+          // o navigate é para redirecionar para uma outra rota de interesse
+          this.router.navigate(['/professores']);
         }
       );
   }
 }
+
 
