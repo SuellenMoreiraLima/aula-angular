@@ -14,6 +14,9 @@ export class MostrarMensagemComponent implements OnInit {
   @Input()
   mensagem : string = '';
 
+  @Input()
+  debug : boolean = false;
+
   constructor() { }
 
   ngOnInit(): void {
